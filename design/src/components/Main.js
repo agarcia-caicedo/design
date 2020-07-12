@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import { makeStyles } from "@material-ui/core/styles";
 import Carousel from "react-material-ui-carousel";
 import Grid from "@material-ui/core/Grid";
@@ -81,6 +82,10 @@ const useStyles = makeStyles({
     position: "relative",
     right: "-35vw",
     padding: "1vh!important",
+  },
+  link: {
+      textDecoration: "none",
+      color: "#430C05",
   }
 })
 
@@ -145,9 +150,9 @@ const Main = props => {
     <>
       <Grid container className={classes.root} spacing={0}>
         <Grid item xs={2} className={classes.sideBar}>
-          <div className={classes.linkList}>About</div>
-          <div className={classes.linkList2}>Work</div>
-          <div className={classes.linkList3}>Contact</div>
+          <div className={classes.linkList}><Link to ="/About" className={classes.link}>About</Link></div>
+          <div className={classes.linkList2}><Link to ="/Work" className={classes.link}>Work</Link></div>
+          <div className={classes.linkList3}><Link to ="/Contact" className={classes.link}>Contact</Link></div>
           <Grid container spacing={3}
           style={{
               padding:"2vh",

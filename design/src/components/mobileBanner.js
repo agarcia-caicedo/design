@@ -72,7 +72,7 @@ function MobileBanner() {
         <Grid>
         <Grid item xs={12}
           style={{
-            height: "25vh",
+            height: "35vh",
           }} />
           <Grid item xs={12}>
             <Typography variant="h4" className={classes.text}>
