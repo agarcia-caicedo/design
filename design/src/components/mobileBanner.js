@@ -14,7 +14,7 @@ const useStyles = makeStyles({
 
   title: {
     padding: "7px",
-    Height: "100vh",
+    height: "50vh",
     backgroundImage: `url(${Triangle})`,
     border: "solid 5px white",
     backgroundSize: "80% 100%",
@@ -22,7 +22,7 @@ const useStyles = makeStyles({
   },
   title2: {
     padding: "7px",
-    maxHeight: "100vh",
+    height: "50vh",
     backgroundImage: `url(${TriangleBlue})`,
     border: "solid 5px white",
     backgroundSize: "80% 100%",
@@ -54,7 +54,7 @@ function MobileBanner() {
           item
           xs={12}
           style={{
-            height: "2vh",
+            height: "1vh",
           }}
         />
         <Grid item xs={12}>
