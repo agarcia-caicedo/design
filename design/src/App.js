@@ -1,7 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { ThemeProvider } from '@material-ui/core/styles'
+import CssBaseline from '@material-ui/core/CssBaseline'
+import theme from './theme'
 import Banner from './components/Banner';
 import MobileBanner from './components/MobileBanner';
 
@@ -15,12 +17,14 @@ const useStyles = makeStyles({
 
 function App() {
   const classes = useStyles();
-  const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down('sm'));
     return (
-        <div className={classes.root}>
+      <ThemeProvider theme={theme}>
+         <CssBaseline />
+         <div className={classes.root}>
           {matches ? <MobileLayout /> : <DesktopLayout />}
         </div>
+      </ThemeProvider>
     )
   }
 

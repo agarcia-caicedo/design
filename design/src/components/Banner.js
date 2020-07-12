@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     maxHeight: "100vh",
     backgroundImage: `url(${Triangle})`,
     border:"solid 5px white",
-    backgroundSize: "cover",
+    backgroundSize: "80% 100%",
     backgroundRepeat: "no-repeat"
   },
   title2:{
@@ -25,16 +25,18 @@ const useStyles = makeStyles({
     maxHeight: "100vh",
     backgroundImage: `url(${TriangleBlue})`,
     border:"solid 5px white",
-    backgroundSize: "cover",
+    backgroundSize: "80% 100%",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "right",
+  },
+  titleText:{
+    fontFamily: "'Chelsea Market', cursive",
+    color: "#430C05",
   },
   text:{
     fontFamily: "'Oswald', sans-serif",
     color: "#00363D",
-    position: "absolute",
-    bottom: "33vh",
-    right: "2vh",
+    textAlign: "right",
   },
 })
 
@@ -44,10 +46,47 @@ const Banner = () => {
   return (
     <Grid container className={classes.root} spacing={0}>
       <Grid item md={6} sm={6} xs={12} className={classes.title}>
-
+      <Grid container>
+        <Grid item xs={12}
+        style={{
+          height: "7vh",
+        }} />
+        <Grid item xs={12}>
+          <Typography variant="h1" className={classes.titleText}>
+            Ana
+          </Typography>
+        </Grid>
+        <Grid item xs={12}>
+          <Typography variant="h1" className={classes.titleText}>
+            Garcia
+          </Typography>
+        </Grid>
+      </Grid>
       </Grid>
       <Grid item md={6} sm={6} xs={12} className={classes.title2}>
-
+        <Grid>
+          <Grid item xs={12}
+          style={{
+            height: "55vh",
+          }} />
+          </Grid>
+          <Grid item xs={12}>
+            <Typography variant="h3" className={classes.text}>
+              Hi! I'm
+            </Typography>
+            <Typography variant="h3" className={classes.text}>
+              a Software
+            </Typography>
+            <Typography variant="h3" className={classes.text}>
+              Development
+            </Typography>
+            <Typography variant="h3" className={classes.text}>
+              student with an
+            </Typography>
+            <Typography variant="h3" className={classes.text}>
+              interest in UI and UX
+            </Typography>
+          </Grid>
       </Grid>
     </Grid>
   )
