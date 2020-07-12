@@ -6,6 +6,8 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import theme from './theme'
 import Banner from './components/Banner';
 import MobileBanner from './components/MobileBanner';
+import Main from './components/Main';
+import MainMobile from './components/MainMobile';
 
 import './App.css';
 
@@ -33,6 +35,7 @@ const classes = useStyles();
 return (
  <div className={classes.root}>
   <MobileBanner />
+  <MainMobile />
  </div>
 )
 }
@@ -42,6 +45,7 @@ const classes = useStyles();
 return (
  <div className={classes.root}>
   <Banner />
+  <Main />
  </div>
 )
 }
