@@ -65,9 +65,9 @@ const Banner = () => {
       </Grid>
       <Grid item md={6} sm={6} xs={12} className={classes.title2}>
         <Grid>
-          <Grid item xs={12}
+        <Grid item xs={12}
           style={{
-            height: "55vh",
+            height: "54.5vh",
           }} />
           </Grid>
           <Grid item xs={12}>
@@ -84,7 +84,7 @@ const Banner = () => {
               student with an
             </Typography>
             <Typography variant="h3" className={classes.text}>
-              interest in UI and UX
+              interest in UI design
             </Typography>
           </Grid>
       </Grid>

@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import Typography from '@material-ui/core/Typography';
+import Typography from "@material-ui/core/Typography";
 import Triangle from "../media/triangles_Red.png";
 import TriangleBlue from "../media/triangles_Blue.png";
 
@@ -14,7 +14,7 @@ const useStyles = makeStyles({
 
   title: {
     padding: "7px",
-    maxHeight: "100vh",
+    Height: "100vh",
     backgroundImage: `url(${Triangle})`,
     border: "solid 5px white",
     backgroundSize: "80% 100%",
@@ -37,8 +37,10 @@ const useStyles = makeStyles({
     fontFamily: "'Oswald', sans-serif",
     color: "#00363D",
     position: "absolute",
-    bottom: "33vh",
+    bottom: "2vh",
     right: "2vh",
+    width: "50vw",
+    textAlign: "right",
   },
 });
 
@@ -52,7 +54,7 @@ function MobileBanner() {
           item
           xs={12}
           style={{
-            height: "5vh",
+            height: "2vh",
           }}
         />
         <Grid item xs={12}>
@@ -66,7 +68,20 @@ function MobileBanner() {
           </Typography>
         </Grid>
       </Grid>
-      <Grid item xs={12} className={classes.title2}></Grid>
+      <Grid item xs={12} className={classes.title2}>
+        <Grid>
+        <Grid item xs={12}
+          style={{
+            height: "25vh",
+          }} />
+          <Grid item xs={12}>
+            <Typography variant="h4" className={classes.text}>
+              Hi! I'm a Software Development student with an interest in UI
+              design
+            </Typography>
+          </Grid>
+        </Grid>
+      </Grid>
     </Grid>
   );
 }
