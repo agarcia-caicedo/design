@@ -9,9 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@material-ui/icons": "^4.9.1",
-    "create-react-app": "^3.4.1",
-    "react-material-ui-carousel": "^1.6.0",
-    "react-router-dom": "^5.2.0"
+    "create-react-app": "^3.4.1"
   }
 }
