@@ -71,7 +71,8 @@ const useStyles = makeStyles({
   text: {
     fontFamily: "'Oswald', sans-serif",
     color: "#430c05",
-    padding: "1vh 5vw 1vh 5vw",
+    padding: "1vh 0vw 1vh 6vw",
+    marginLeft: "2vw",
     width: "50vw",
   }
 });
@@ -167,7 +168,7 @@ const About = () => {
         <Typography variant="h5" className={classes.title}
         style={{
             textAlign: "left",
-            paddingLeft: "5vw",
+            marginLeft: "7vw",
         }}>
             - Ana Garcia
         </Typography>

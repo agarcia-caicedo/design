@@ -2,12 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import Email from "../components/Email";
 import Typography from "@material-ui/core/Typography";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import NoteIcon from "@material-ui/icons/Note";
 import IconButton from "@material-ui/core/IconButton";
+import Scribbles from "../../media/scribbles.png";
+import Email from "../../components/Email";
 
 const useStyles = makeStyles({
     root: {
@@ -67,7 +68,13 @@ const useStyles = makeStyles({
       color: "#430c05",
       padding: "1vh 5vw 1vh 5vw",
       width: "50vw",
-    }
+    },
+    pic: {
+        backgroundImage: `url(${Scribbles})`,
+        backgroundSize: "100% 100%",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "right",
+      },
   });
 
 const Contact = () => {
@@ -138,7 +145,7 @@ const Contact = () => {
         </Typography>
           <Email></Email>
         </Grid>
-        <Grid item xs={3} />
+        <Grid item xs={3} className={classes.pic}/>
       </Grid>
     );
   }
