@@ -76,7 +76,7 @@ const useStyles = makeStyles({
   }
 });
 
-const Banner = () => {
+const About = () => {
   const classes = useStyles();
 
   return (
@@ -177,4 +177,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default About;
