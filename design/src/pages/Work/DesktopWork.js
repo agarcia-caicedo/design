@@ -1,11 +1,13 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import GitHubIcon from '@material-ui/icons/GitHub';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import NoteIcon from '@material-ui/icons/Note';
-import IconButton from '@material-ui/core/IconButton';
+import Card from "@material-ui/core/Card";
+import CardHeader from "@material-ui/core/CardHeader";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
+import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
+import SideMenu from "../../components/SideMenu";
 
 import Telescope from "../../media/telescope.PNG";
 import Hex from "../../media/hex.png";
@@ -17,37 +19,10 @@ const useStyles = makeStyles({
   },
   sideBar: {
     backgroundColor: "#d24d22",
+    position: "fixed",
+    height: "100%",
   },
-  linkList: {
-    backgroundColor: "#FFCB51",
-    height: "8vh",
-    marginTop: "25vh",
-    marginBottom: "5vh",
-    fontFamily: "'Oswald', sans-serif",
-    color: "#430C05",
-    display: "block",
-    fontSize: "5vh",
-    textAlign: "center",
-  },
-  linkList2: {
-    backgroundColor: "#FFBA26",
-    height: "8vh",
-    marginBottom: "5vh",
-    fontFamily: "'Oswald', sans-serif",
-    color: "#430C05",
-    display: "block",
-    fontSize: "5vh",
-    textAlign: "center",
-  },
-  linkList3: {
-    backgroundColor: "#E67413",
-    height: "8vh",
-    fontFamily: "'Oswald', sans-serif",
-    fontSize: "5vh",
-    color: "#430C05",
-    display: "block",
-    textAlign: "center",
-  },
+
   center: {
     display: "flex",
     justifyContent: "center",
@@ -56,67 +31,154 @@ const useStyles = makeStyles({
   header: {
     fontFamily: "'Galada', cursive",
     color: "#0b3638",
+    padding: "1vh",
   },
   media: {
     height: 0,
     paddingTop: "56.25%", // 16:9
   },
   card: {
-    width: "47vw",
+    height: "60vh",
+    width: "25vw",
     padding: "2vh",
+    margin: "2vw",
   },
   text: {
     fontFamily: "'Oswald', sans-serif",
     color: "#0b3638",
   },
   link: {
-      textDecoration: "none",
-      color: "#430C05",
-  }
-})
+    textDecoration: "none",
+    color: "#430C05",
+  },
+  b: {
+    fontFamily: "'Oswald', sans-serif",
+    margin: "1vw",
+    position: "relative",
 
-const Work = props => {
-  const classes = useStyles()
+    padding: "1vh!important",
+  },
+});
+
+const Work = (props) => {
+  const classes = useStyles();
   return (
     <>
       <Grid container className={classes.root} spacing={0}>
         <Grid item xs={2} className={classes.sideBar}>
-          <div className={classes.linkList}><Link to ="/About" className={classes.link}>About</Link></div>
-          <div className={classes.linkList2}><Link to ="/design" className={classes.link}>Home</Link></div>
-          <div className={classes.linkList3}><Link to ="/Contact" className={classes.link}>Contact</Link></div>
-          <Grid container spacing={3}
+        <SideMenu />
+        </Grid>
+        <Grid item xs={2}>
+          <div
           style={{
-              padding:"2vh",
-          }}>
-            <Grid item xs={3}>
-                <a href="https://github.com/agarcia-caicedo/" target="_blank" rel="noopener noreferrer">
-                <IconButton>
-                    <GitHubIcon fontSize="large"/>
-                </IconButton>
-                </a>
+            height: "100%",
+            width: "100%",
+          }}
+          />
+        </Grid>
+        <Grid item xs={10} className={classes.center}>
+          <Grid container>
+            <Grid item xs={12}>
+              {" "}
+              <Typography
+                variant="h4"
+                style={{
+                  marginLeft: "2vw",
+                  marginTop: "2vh",
+                  color: "#0b3638",
+                }}
+              >
+                UI and Web Development
+              </Typography>
             </Grid>
-            <Grid item xs={3}>
-                <a href="https://www.linkedin.com/in/ana-garcia-amg/" target="_blank" rel="noopener noreferrer">
-                <IconButton>
-                    <LinkedInIcon fontSize="large"/>
-                </IconButton>
-                </a>
+            <Grid item>
+              <Card className={classes.card}>
+                <CardHeader
+                  title="Telescope"
+                  className={classes.header}
+                  titleTypographyProps={{ variant: "h5" }}
+                  style={{
+                    backgroundColor: "#03c5ce",
+                    color: "#0b3638",
+                  }}
+                />
+                <CardMedia
+                  className={classes.media}
+                  image={Telescope}
+                  title="Telescope"
+                />
+                <CardContent
+                  style={{
+                    paddingTop: "2vh",
+                    paddingLeft: "2vh",
+                    paddingBottom: 0,
+                  }}
+                >
+                  <Typography
+                    variant="body1"
+                    component="p"
+                    className={classes.text}
+                  >
+                    Telescope is an open-source blog aggregator that keeps track
+                    of blogs written by Seneca College students about the open
+                    source community.
+                  </Typography>
+                </CardContent>
+                <Button variant="contained" className={classes.b}>
+                  Read More
+                </Button>
+              </Card>
             </Grid>
-            <Grid item xs={3}>
-                <a href="https://semortea.wordpress.com/" target="_blank" rel="noopener noreferrer">
-                <IconButton>
-                    <NoteIcon fontSize="large"/>
-                </IconButton>
-                </a>
+            <Grid item xs={12}>
+              {" "}
+              <Typography
+                variant="h4"
+                style={{
+                  marginLeft: "2vw",
+                  color: "#430c05",
+                }}
+              >
+                Other Projects
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Card className={classes.card}>
+                <CardHeader
+                  title="Hex"
+                  className={classes.header}
+                  titleTypographyProps={{ variant: "h5" }}
+                  style={{
+                    backgroundColor: "#c45124",
+                    color: "#430c05",
+                  }}
+                />
+                <CardMedia className={classes.media} image={Hex} title="Hex" />
+                <CardContent
+                  style={{
+                    paddingTop: "2vh",
+                    paddingLeft: "2vh",
+                    paddingBottom: 0,
+                  }}
+                >
+                  <Typography
+                    variant="body1"
+                    component="p"
+                    className={classes.text}
+                  >
+                    HEX - A short horror film screened at the 2020 Western
+                    Smartphone Film Festival (WSFF). Directed and edited by me.
+                  </Typography>
+                </CardContent>
+                <Button variant="contained" className={classes.b}>
+                  Read More
+                </Button>
+              </Card>
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={10} className={classes.center}>
-
-        </Grid>
       </Grid>
     </>
-  )
-}
+  );
+};
 
-export default Work
+export default Work;
