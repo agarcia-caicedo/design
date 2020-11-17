@@ -1,28 +1,30 @@
 {
   "files": {
     "main.css": "/design/static/css/main.023d3b4e.chunk.css",
-    "main.js": "/design/static/js/main.feded152.chunk.js",
-    "main.js.map": "/design/static/js/main.feded152.chunk.js.map",
+    "main.js": "/design/static/js/main.6def3bca.chunk.js",
+    "main.js.map": "/design/static/js/main.6def3bca.chunk.js.map",
     "runtime-main.js": "/design/static/js/runtime-main.88edfdd5.js",
     "runtime-main.js.map": "/design/static/js/runtime-main.88edfdd5.js.map",
-    "static/js/2.72364902.chunk.js": "/design/static/js/2.72364902.chunk.js",
-    "static/js/2.72364902.chunk.js.map": "/design/static/js/2.72364902.chunk.js.map",
+    "static/js/2.e99b9867.chunk.js": "/design/static/js/2.e99b9867.chunk.js",
+    "static/js/2.e99b9867.chunk.js.map": "/design/static/js/2.e99b9867.chunk.js.map",
     "index.html": "/design/index.html",
-    "precache-manifest.cc961787409ad23bb1f3c177503bdee6.js": "/design/precache-manifest.cc961787409ad23bb1f3c177503bdee6.js",
+    "precache-manifest.6778d8e276607691134eea3b82afb69c.js": "/design/precache-manifest.6778d8e276607691134eea3b82afb69c.js",
     "service-worker.js": "/design/service-worker.js",
     "static/css/main.023d3b4e.chunk.css.map": "/design/static/css/main.023d3b4e.chunk.css.map",
-    "static/js/2.72364902.chunk.js.LICENSE.txt": "/design/static/js/2.72364902.chunk.js.LICENSE.txt",
+    "static/js/2.e99b9867.chunk.js.LICENSE.txt": "/design/static/js/2.e99b9867.chunk.js.LICENSE.txt",
+    "static/media/100.png": "/design/static/media/100.16d3ef3d.png",
     "static/media/hex.png": "/design/static/media/hex.843838b8.png",
+    "static/media/ignite.png": "/design/static/media/ignite.7619884f.png",
     "static/media/scribbles.png": "/design/static/media/scribbles.35b9f57a.png",
-    "static/media/telescope.PNG": "/design/static/media/telescope.9e07bd6b.PNG",
+    "static/media/telescope.png": "/design/static/media/telescope.cce52b57.png",
     "static/media/triangles.png": "/design/static/media/triangles.cb006061.png",
     "static/media/triangles_Blue.png": "/design/static/media/triangles_Blue.68dc3c93.png",
     "static/media/triangles_Red.png": "/design/static/media/triangles_Red.aa9c1556.png"
   },
   "entrypoints": [
     "static/js/runtime-main.88edfdd5.js",
-    "static/js/2.72364902.chunk.js",
+    "static/js/2.e99b9867.chunk.js",
     "static/css/main.023d3b4e.chunk.css",
-    "static/js/main.feded152.chunk.js"
+    "static/js/main.6def3bca.chunk.js"
   ]
 }
