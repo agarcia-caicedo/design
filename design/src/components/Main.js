@@ -10,7 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import SideMenu from "./SideMenu";
 
-import Telescope from "../media/telescope.PNG";
+import Telescope from "../media/telescope.png";
 import Hex from "../media/hex.png";
 
 const useStyles = makeStyles({
@@ -29,7 +29,7 @@ const useStyles = makeStyles({
   },
   media: {
     height: 0,
-    paddingTop: "56.25%", // 16:9
+    paddingTop: "50%", // 16:9
   },
   card: {
     width: "47vw",

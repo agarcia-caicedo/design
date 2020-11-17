@@ -9,8 +9,10 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import SideMenu from "../../components/SideMenu";
 
-import Telescope from "../../media/telescope.PNG";
+import Telescope from "../../media/telescope.png";
 import Hex from "../../media/hex.png";
+import IGN from "../../media/ignite.png";
+import UI from "../../media/100.png";
 
 const useStyles = makeStyles({
   root: {
@@ -35,13 +37,13 @@ const useStyles = makeStyles({
   },
   media: {
     height: 0,
-    paddingTop: "56.25%", // 16:9
+    paddingTop: "50%", // 16:9
   },
   card: {
     height: "60vh",
     width: "25vw",
     padding: "2vh",
-    margin: "2vw",
+    margin: "1vw",
   },
   text: {
     fontFamily: "'Oswald', sans-serif",
@@ -122,6 +124,79 @@ const Work = (props) => {
                     Telescope is an open-source blog aggregator that keeps track
                     of blogs written by Seneca College students about the open
                     source community.
+                  </Typography>
+                </CardContent>
+                <Button variant="contained" className={classes.b}>
+                  Read More
+                </Button>
+              </Card>
+            </Grid>
+            <Grid item>
+              <Card className={classes.card}>
+                <CardHeader
+                  title="Ignite"
+                  className={classes.header}
+                  titleTypographyProps={{ variant: "h5" }}
+                  style={{
+                    backgroundColor: "#03c5ce",
+                    color: "#0b3638",
+                  }}
+                />
+                <CardMedia
+                  className={classes.media}
+                  image={IGN}
+                  title="Ignite"
+                />
+                <CardContent
+                  style={{
+                    paddingTop: "2vh",
+                    paddingLeft: "2vh",
+                    paddingBottom: 0,
+                  }}
+                >
+                  <Typography
+                    variant="body1"
+                    component="p"
+                    className={classes.text}
+                  >
+                    Ignite is a horizontal prototype for a PC video game launcher designed in order to learn
+                    UX methodology. Summer 2020.
+                  </Typography>
+                </CardContent>
+                <Button variant="contained" className={classes.b}>
+                  Read More
+                </Button>
+              </Card>
+            </Grid>
+            <Grid item>
+              <Card className={classes.card}>
+                <CardHeader
+                  title="100 Days of UI"
+                  className={classes.header}
+                  titleTypographyProps={{ variant: "h5" }}
+                  style={{
+                    backgroundColor: "#03c5ce",
+                    color: "#0b3638",
+                  }}
+                />
+                <CardMedia
+                  className={classes.media}
+                  image={UI}
+                  title="100 Days of UI"
+                />
+                <CardContent
+                  style={{
+                    paddingTop: "2vh",
+                    paddingLeft: "2vh",
+                    paddingBottom: 0,
+                  }}
+                >
+                  <Typography
+                    variant="body1"
+                    component="p"
+                    className={classes.text}
+                  >
+                    Smaller UI Challenges I take up during my free time in order to improve my UI and UX skills.
                   </Typography>
                 </CardContent>
                 <Button variant="contained" className={classes.b}>
