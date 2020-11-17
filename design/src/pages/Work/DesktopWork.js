@@ -127,7 +127,12 @@ const Work = (props) => {
                   </Typography>
                 </CardContent>
                 <Button variant="contained" className={classes.b}>
-                  Read More
+                  <a href="https://xd.adobe.com/view/09449821-005a-42a1-8163-48a8e58c280c-5c17/grid"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={classes.link}>
+                    See More
+                  </a>
                 </Button>
               </Card>
             </Grid>
@@ -164,11 +169,11 @@ const Work = (props) => {
                   </Typography>
                 </CardContent>
                 <Button variant="contained" className={classes.b}>
-                  <a href="https://xd.adobe.com/view/e9635733-5692-4ce6-8776-97d7d5d24f25-bc30/?fullscreenh"
+                  <a href="https://xd.adobe.com/view/e9635733-5692-4ce6-8776-97d7d5d24f25-bc30/grid?fullscreenh"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={classes.link}>
-                    Read More
+                    See More
                     </a>
                 </Button>
               </Card>
@@ -205,7 +210,12 @@ const Work = (props) => {
                   </Typography>
                 </CardContent>
                 <Button variant="contained" className={classes.b}>
-                  Read More
+                <a href="https://xd.adobe.com/view/3e8b71a6-db70-40df-afbf-cfcdbd1a45cc-6bd8/grid"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={classes.link}>
+                    See More
+                  </a>
                 </Button>
               </Card>
             </Grid>
@@ -250,7 +260,12 @@ const Work = (props) => {
                   </Typography>
                 </CardContent>
                 <Button variant="contained" className={classes.b}>
-                  Read More
+                <a href="https://www.youtube.com/watch?v=7g_QBjzUpQI&feature=youtu.be"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={classes.link}>
+                    Watch
+                    </a>
                 </Button>
               </Card>
             </Grid>

@@ -58,24 +58,24 @@ const About = () => {
         </Typography>
         <Typography className={classes.text}>
           I'm a seventh semester software development student at
-          Seneca College. I'm passionate about UI and UX design so I try to spend
-          my free time developing those skills through design challenges and
-          open source projects. Over the past year, I have written some blog posts about
+          Seneca College. I'm passionate about UI and UX design so I try to develop
+          those skills through design challenges and
+          open source projects. Over the past year, I have written blog posts about
           my experience working and collaborating on those projects.
         </Typography>
         <Typography className={classes.text}>
-          I've been working on-and-off as a freelance graphic designer since
-          2015, and I started creating digital art since around the same time.
+          Besides software development, I've done graphic design work since
+          2015. During that time, I've also worked on my digital art, mostly as a hobby, but
+          I've done commissions occasionally.
           My work has been significantly inspired by the Dadaism movement, Baroque
-          artworks from both Caravaggio and Gentileschi, and the cinematography from
-          NBC's Hannibal.
+          artwork, and cinematography that shares those themes.
         </Typography>
         <Typography className={classes.text}>
-          Outside of schoolwork and design, I greatly enjoy film. I'm a huge
-          horror fan and I directed and edited my first short film this past
-          January. Whenever possible, I try to volunteer at film festivals,
-          so far I have volunteered at the Toronto After Dark Festival in 2019
-          and at TIFF in 2018.
+          Outside of schoolwork and design, I'm a fan of film. I'm very interested in
+          horror media, and it has inspired me to direct and edit my own short film.
+          I try to be a part of the film community wherever I live, so far having volunteered
+          at TIFF in 2018, the Toronto After Dark Festival in 2019, and currently I'm doing
+          graphic design work for the Western Smartphone Film Festival.
         </Typography>
         <Typography variant="h5" className={classes.title}
         style={{
