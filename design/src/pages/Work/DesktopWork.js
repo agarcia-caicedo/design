@@ -51,7 +51,7 @@ const useStyles = makeStyles({
   },
   link: {
     textDecoration: "none",
-    color: "#430C05",
+    color: "#0b3638",
   },
   b: {
     fontFamily: "'Oswald', sans-serif",
@@ -164,7 +164,12 @@ const Work = (props) => {
                   </Typography>
                 </CardContent>
                 <Button variant="contained" className={classes.b}>
-                  Read More
+                  <a href="https://xd.adobe.com/view/e9635733-5692-4ce6-8776-97d7d5d24f25-bc30/?fullscreenh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={classes.link}>
+                    Read More
+                    </a>
                 </Button>
               </Card>
             </Grid>
